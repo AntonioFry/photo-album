@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <main>
-        
+        <header>
+          <h1 className="title-heading">My Photo Album</h1>
+        </header>
       </main>
     );
   }
