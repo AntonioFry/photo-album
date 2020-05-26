@@ -1,0 +1,33 @@
+.photo-card {
+  box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.5);
+  background-color: rgba(247, 247, 247, 0.5);
+  border-radius: 10px;
+  height: 266.66px;
+  width: 400px;
+}
+
+.photo-card:hover .photo-comment-container {
+  visibility: visible;
+}
+
+.taken-photo {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.photo-comment-container {
+  visibility: hidden;
+  background-color: rgba(247, 247, 247, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  position: relative;
+  bottom: 77px;
+  width: 400px;
+}
+
+.photo-comment {
+  font-size: 13px;
+  margin: 0px;
+}
