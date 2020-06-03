@@ -9,4 +9,10 @@ export const imageData = [
     photoComment: "I have always thougth it's always been cool to see the Moon during the day, and so I took a picture. It maybe common photo to find on the web, but it's still cool to see the craters so clearly when it's from a photo you took.",
     photoDescription: 'The Moon visible among the blue sky'
   },
+  {
+    imageSrc: require('./Images/honeybee.JPG'),
+    photoComment: "Though this photo isn't my favorite, it was still a lucky shot to catch a bee polinating",
+    photoDescription: 'bee polinating bright purple flower'
+  },
+  
 ]
