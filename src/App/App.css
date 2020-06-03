@@ -3,12 +3,12 @@
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.253);
+  background-color: snow;
   height: 900px;
 }
 
 header {
-  background-color: rgba(76, 91, 104, 0.753);
+  background-color: black;
   padding: 20px;
 }
 
