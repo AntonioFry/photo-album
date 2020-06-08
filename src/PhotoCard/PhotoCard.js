@@ -10,7 +10,7 @@ const PhotoCard = ({ photoDescription, imageSrc, photoComment }) => {
   return (
     <article class='photo-card' style={backgroundImage}>
       <div className='photo-comment-container'>
-        <p class='photo-comment'>{photoComment}</p>
+        <p className='photo-comment'>{photoComment}</p>
       </div>
     </article>
   )
