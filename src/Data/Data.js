@@ -14,5 +14,11 @@ export const imageData = [
     photoComment: "Though this photo isn't my favorite, it was still a lucky shot to catch a bee polinating",
     photoDescription: 'Bee polinating bright purple flower.'
   },
+  {
+    imageSrc: require('./Images/wasp.JPG'),
+    photoComment: "Took this photo from across the room using a longer lens. I was amazed to also see how much detail was able to be captured. I was also able to free the bugger from my house.",
+    photoDescription: "Wasp resting on thin white curtain"
+  },
+  
 
 ]
