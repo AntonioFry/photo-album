@@ -12,7 +12,7 @@ export const imageData = [
   {
     imageSrc: require('./Images/honeybee.JPG'),
     photoComment: "Though this photo isn't my favorite, it was still a lucky shot to catch a bee polinating",
-    photoDescription: 'bee polinating bright purple flower'
+    photoDescription: 'Bee polinating bright purple flower.'
   },
-  
+
 ]
