@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PhotoCard from './PhotoCard';
 
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 describe('PhotoCard', () => {
+
+  afterEach(cleanup);
   
   it('Should render without crashing', () => {
     const div = document.createElement('div');
