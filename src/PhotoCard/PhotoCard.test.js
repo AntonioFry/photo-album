@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PhotoCard from './PhotoCard';
+import renderer from 'react-test-renderer';
 
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
@@ -17,5 +18,10 @@ describe('PhotoCard', () => {
   it('Should render correctly', () => {
     const {getByTestId} = render(<PhotoCard imageSrc='some.JPG' photoComment="It's a photo of something" photoDescription='A something'/>);
     expect(getByTestId('photo-comment')).toHaveTextContent("It's a photo of something");
-  })
+  });
+
+  it('Should match snapshot', () => {
+    const tree = renderer.create(<PhotoCard imageSrc='some.JPG' photoComment="It's something" />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 })
