@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoCard Should match snapshot 1`] = `
+<article
+  className="photo-card"
+  style={
+    Object {
+      "backgroundImage": "url(some.JPG)",
+      "backgroundSize": "cover",
+    }
+  }
+>
+  <div
+    className="photo-comment-container"
+  >
+    <p
+      className="photo-comment"
+      data-testid="photo-comment"
+    >
+      It's something
+    </p>
+  </div>
+</article>
+`;
