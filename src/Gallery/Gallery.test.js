@@ -15,4 +15,9 @@ describe('Gallery', () => {
     ReactDOM.render(<Gallery />, div);
   });
 
+  it('Should match snapshot', () => {
+    const tree = renderer.create(<Gallery />);
+    expect(tree).toMatchSnapshot();
+  });
+
 });
