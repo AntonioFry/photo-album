@@ -12,16 +12,16 @@ describe('PhotoCard', () => {
   
   it('Should render without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<PhotoCard imageSrc='some.JPG' photoComment="It's something"/>, div);
+    ReactDOM.render(<PhotoCard imageSrc='some.JPG' photoComment="It's something" testId="photo-comment"/>, div);
   });
 
   it('Should render correctly', () => {
-    const {getByTestId} = render(<PhotoCard imageSrc='some.JPG' photoComment="It's a photo of something" photoDescription='A something'/>);
+    const { getByTestId } = render(<PhotoCard imageSrc='some.JPG' photoComment="It's a photo of something" photoDescription='A something' testId="photo-comment"/>);
     expect(getByTestId('photo-comment')).toHaveTextContent("It's a photo of something");
   });
 
   it('Should match snapshot', () => {
-    const tree = renderer.create(<PhotoCard imageSrc='some.JPG' photoComment="It's something" />).toJSON();
+    const tree = renderer.create(<PhotoCard imageSrc='some.JPG' photoComment="It's something" testId="photo-comment"/>).toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

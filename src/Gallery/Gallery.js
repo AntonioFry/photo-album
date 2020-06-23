@@ -4,9 +4,11 @@ import { imageData } from '../Data/Data';
 import './Gallery.css';
 
 const Gallery = () => {
-  const photoCards = imageData.map(imgData => {
+  const photoCards = imageData.map((imgData, index) => {
     return (
-      <PhotoCard 
+      <PhotoCard
+        key={index + 1}
+        testId={`photo-comment-${index + 1}`}
         {...imgData}
       />
     )
