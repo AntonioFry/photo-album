@@ -15,6 +15,11 @@ describe('Gallery', () => {
     ReactDOM.render(<Gallery />, div);
   });
 
+  it('Should render correctly', () => {
+    const { getByTestId } = render(<Gallery />);
+    expect(getByTestId('photo-comment-1')).toHaveTextContent('This is one the first image I took of any sort of insect. After being able to see how much detail that was visible in the image versus the naked eye, I decided to try taking more of the small critters that roam the earth.')
+  });
+
   it('Should match snapshot', () => {
     const tree = renderer.create(<Gallery />);
     expect(tree).toMatchSnapshot();
