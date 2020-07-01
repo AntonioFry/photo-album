@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <main>
         <header>
-          <h1 className="title-heading">My Photo Album</h1>
+          <h1 data-testid="title" className="title-heading">My Photo Album</h1>
         </header>
         <Gallery />
       </main>
