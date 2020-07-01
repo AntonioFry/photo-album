@@ -19,4 +19,8 @@ describe('App', () => {
     expect(getByTestId('title')).toHaveTextContent('My Photo Album');
   });
 
+  it('Should match snapshot', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 })
