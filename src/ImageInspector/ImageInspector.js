@@ -8,4 +8,14 @@ class ImageInspector extends Component {
       imageCollection: [],
     }
   }
+
+  render() {
+    return (
+      <section className="faded-background">
+        <div className="image-container">
+          
+        </div>
+      </section>
+    )
+  }
 };
