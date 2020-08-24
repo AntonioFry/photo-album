@@ -9,6 +9,7 @@ const Gallery = () => {
       <PhotoCard
         key={index + 1}
         testId={`photo-comment-${index + 1}`}
+        {...imgData.photos[0]}
         {...imgData}
       />
     )
