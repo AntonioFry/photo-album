@@ -11,13 +11,17 @@ class App extends Component {
     }
   }
 
+  setCurrentPhotoAlbum = (photos) => {
+    this.setState({ currentPhotoAlbum: photos })
+  };
+
   render() {
     return (
       <main>
         <header>
           <h1 data-testid="title" className="title-heading">My Photo Album</h1>
         </header>
-        <Gallery />
+        <Gallery setCurrentPhotoAlbum={this.setCurrentPhotoAlbum} />
         <ImageInspector imageCollection={this.state.currentPhotoAlbum} />
       </main>
     );
