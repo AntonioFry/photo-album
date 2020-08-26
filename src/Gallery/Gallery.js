@@ -3,10 +3,11 @@ import PhotoCard from '../PhotoCard/PhotoCard';
 import { imageData } from '../Data/Data';
 import './Gallery.css';
 
-const Gallery = () => {
+const Gallery = ({ setCurrentPhotoAlbum }) => {
   const photoCards = imageData.map((imgData, index) => {
     return (
       <PhotoCard
+        setCurrentPhotoAlbum={setCurrentPhotoAlbum}
         key={index + 1}
         testId={`photo-comment-${index + 1}`}
         {...imgData.photos[0]}
