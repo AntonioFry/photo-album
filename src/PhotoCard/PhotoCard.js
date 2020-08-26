@@ -1,7 +1,8 @@
 import React from 'react';
+import ImageInspector from '../ImageInspector/ImageInspector';
 import './PhotoCard.css';
 
-const PhotoCard = ({ photoDescription, imageSrc, photoComment, testId, photos, albumName }) => {
+const PhotoCard = ({ imageSrc, photoComment, testId, photos, albumName, setCurrentPhotoAlbum }) => {
   const backgroundImage = {
     'backgroundImage': `url(${imageSrc})`,
     'backgroundSize': 'cover',
@@ -10,7 +11,7 @@ const PhotoCard = ({ photoDescription, imageSrc, photoComment, testId, photos, a
     <article className='photo-card' style={backgroundImage}>
       <div className='photo-comment-container'>
         <p data-testid={testId} className='photo-comment'>{photoComment}</p>
-        <h2 className="album-name">{albumName}</h2>
+        <h2 onClick={() => setCurrentPhotoAlbum(photos)} className="album-name">{albumName}</h2>
       </div>
     </article>
   )
