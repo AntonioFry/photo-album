@@ -8,13 +8,15 @@ class App extends Component {
     super();
     this.state = {
       currentPhotoAlbum: [],
+      currentPhoto: ''
     }
   }
 
   setCurrentPhotoAlbum = (photos) => {
-    this.setState({ currentPhotoAlbum: photos })
+    this.setState({ currentPhotoAlbum: photos });
+    this.setState({ currentPhoto: photos[0].imageSrc });
   };
-
+  
   render() {
     return (
       <main>
@@ -22,7 +24,10 @@ class App extends Component {
           <h1 data-testid="title" className="title-heading">My Photo Album</h1>
         </header>
         <Gallery setCurrentPhotoAlbum={this.setCurrentPhotoAlbum} />
-        <ImageInspector imageCollection={this.state.currentPhotoAlbum} />
+        { this.state.currentPhoto === '' ? null : <ImageInspector
+         imageCollection={this.state.currentPhotoAlbum}
+         startingPhoto={this.state.currentPhoto} 
+        /> }
       </main>
     );
   }
