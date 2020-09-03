@@ -24,7 +24,7 @@ class ImageInspector extends Component {
     return (
       <section className="faded-background">
         <div className="image-container">
-          <img className='inspected-image' src={currentImage} />
+          <img className='inspected-image' src={currentImage} alt={currentImage.photoDescription}/>
         </div>
       </section>
     )
