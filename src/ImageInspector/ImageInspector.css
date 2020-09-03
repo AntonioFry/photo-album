@@ -10,10 +10,17 @@
 }
 
 .image-container {
-  background-color: white;
   height: 400px;
 }
 
 .inspected-image {
   width: 600px;
+}
+
+.right-button,
+.left-button {
+  height: 80px;
+  position: relative;
+  top: -200px;
+  width: 25px;
 }
