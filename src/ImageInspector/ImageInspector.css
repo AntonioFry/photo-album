@@ -1,7 +1,19 @@
 .faded-background {
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.image-container {
+  background-color: white;
+  height: 400px;
 }
 
 .inspected-image {
-  width: 300px;
+  width: 600px;
 }
