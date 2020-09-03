@@ -1,5 +1,4 @@
 import React from 'react';
-import ImageInspector from '../ImageInspector/ImageInspector';
 import './PhotoCard.css';
 
 const PhotoCard = ({ imageSrc, photoComment, testId, photos, albumName, setCurrentPhotoAlbum }) => {
