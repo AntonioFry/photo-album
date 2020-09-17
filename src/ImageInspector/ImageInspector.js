@@ -19,14 +19,26 @@ class ImageInspector extends Component {
     }
   }
 
+  changePhoto = async (direction) => {
+    const { imageCollection, currentImage, currentImageIndex } = this.state;
+    if (direction === 'left') {
+      await this.setState({ currentImageIndex: currentImageIndex - 1 });
+      this.setState({ currentImage: imageCollection[this.state.currentImageIndex].imageSrc });
+    } else if (direction  === 'right') {
+      await this.setState({ currentImageIndex: currentImageIndex + 1 });
+      this.setState({ currentImage: imageCollection[this.state.currentImageIndex].imageSrc });
+    }
+  }
+
   render() {
-    const { currentImage } = this.state;
+    const { currentImage, imageCollection, currentImageIndex } = this.state;
+
     return (
       <section className="faded-background">
         <div className="image-container">
-          <button className='left-button'>{'<'}</button>
+          <button className='left-button' onClick={() => this.changePhoto('left')} disabled={imageCollection[currentImageIndex - 1] === undefined}>{'<'}</button>
           <img className='inspected-image' src={currentImage} alt={currentImage.photoDescription}/>
-          <button className='right-button'>{'>'}</button>
+          <button className='right-button' onClick={() => this.changePhoto('right')} disabled={imageCollection[currentImageIndex + 1] === undefined}>{'>'}</button>
         </div>
       </section>
     )
