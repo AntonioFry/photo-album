@@ -24,3 +24,8 @@
   top: -200px;
   width: 25px;
 }
+
+.right-button:disabled,
+.left-button:disabled {
+  background-color: gray;
+}
