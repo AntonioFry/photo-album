@@ -11,10 +11,12 @@
 }
 
 .image-container {
+  transition: padding 0.25s linear;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 0px 0px 0px;
 }
 
 .inspected-image {
@@ -23,31 +25,60 @@
 
 .right-button,
 .left-button {
+  transition: color 0s linear,
+              margin 0.25s linear,
+              width 0.25s linear;
   background-color: rgba(0, 0, 0, .65);
   border: none;
-  color: white;
+  color: transparent;
+  padding: 0px;
   height: 80px;
-  width: 25px;
+  width: 10px;
 }
 
 .right-button:hover,
 .left-button:hover {
+  transition: margin 0.25s linear,
+              color 0.25s step-end,
+              width 0.25s linear;
   background-color: rgba(0, 0, 0, .8);
+  color: white;
+  width: 30px;
+}
+
+.right-button:hover {
+  margin: 0px
+}
+
+.left-button:hover {
+  margin: 0px;
 }
 
 .right-button {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+  margin: 0px 20px 0px 0px;
 }
 
 .left-button {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
+  margin: 0px 0px 0px 20px;
 }
 
 .right-button:disabled,
 .left-button:disabled {
+  width: 10px;
+  color: transparent;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right-button:disabled {
+  margin: 0px 20px 0px 0px;
+}
+
+.left-button:disabled {
+  margin: 0px 0px 0px 20px;
 }
 
 .close-button {
@@ -56,7 +87,7 @@
   color: white;
   position: relative;
   bottom: 185px;
-  left: 625px;
+  left: 630px;
   text-align: center;
   width: 30px;
   height: 30px;
