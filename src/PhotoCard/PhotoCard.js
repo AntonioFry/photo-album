@@ -10,7 +10,9 @@ const PhotoCard = ({ imageSrc, photoComment, testId, photos, albumName, setCurre
     <article className='photo-card' style={backgroundImage}>
       <div className='photo-comment-container'>
         <p data-testid={testId} className='photo-comment'>{photoComment}</p>
-        <h2 onClick={() => setCurrentPhotoAlbum(photos)} className="album-name">{albumName}</h2>
+        <div className="photo-card-btn-container">
+          <button onClick={() => setCurrentPhotoAlbum(photos)} className="album-name-btn">{albumName}</button>
+        </div>
       </div>
     </article>
   )
