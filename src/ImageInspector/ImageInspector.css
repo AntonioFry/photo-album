@@ -19,8 +19,25 @@
   padding: 0px 0px 0px 0px;
 }
 
+.image-container:hover .image-inspector-comment-container {
+  visibility: visible;
+}
+
 .inspected-image {
   width: 600px;
+}
+
+.image-inspector-comment-container {
+  background-color: rgba(247, 247, 247, 0.5);
+  bottom: 134px;
+  padding: 10px;
+  position: absolute;
+  width: 600px;
+  visibility: hidden;
+}
+
+.image-inspector-photo-comment {
+  margin: 0px;
 }
 
 .right-button,
