@@ -19,6 +19,10 @@
   padding: 0px 0px 0px 0px;
 }
 
+.image-container:hover .image-inspector-comment-container {
+  visibility: visible;
+}
+
 .inspected-image {
   width: 600px;
 }
@@ -29,6 +33,7 @@
   padding: 10px;
   position: absolute;
   width: 600px;
+  visibility: hidden;
 }
 
 .image-inspector-photo-comment {
