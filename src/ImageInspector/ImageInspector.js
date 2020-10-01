@@ -28,21 +28,21 @@ class ImageInspector extends Component {
     return (
       <section className="faded-background">
         <button className="close-button" onClick={() => this.props.closeInspector()}>X</button>
+        <button 
+          className='left-button' 
+          onClick={() => this.changePhoto('left')} 
+          disabled={imageCollection[currentImageIndex - 1] === undefined}>
+            {'<'}
+        </button>
         <div className="image-container">
-          <button 
-            className='left-button' 
-            onClick={() => this.changePhoto('left')} 
-            disabled={imageCollection[currentImageIndex - 1] === undefined}>
-              {'<'}
-          </button>
           <img className='inspected-image' src={currentImage} alt={currentImage.photoDescription}/>
-          <button
-            className='right-button'
-            onClick={() => this.changePhoto('right')}
-            disabled={imageCollection[currentImageIndex + 1] === undefined}>
-              {'>'}
-          </button>
         </div>
+        <button
+          className='right-button'
+          onClick={() => this.changePhoto('right')}
+          disabled={imageCollection[currentImageIndex + 1] === undefined}>
+            {'>'}
+        </button>
       </section>
     )
   }
