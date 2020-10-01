@@ -23,6 +23,18 @@
   width: 600px;
 }
 
+.image-inspector-comment-container {
+  background-color: rgba(247, 247, 247, 0.5);
+  bottom: 134px;
+  padding: 10px;
+  position: absolute;
+  width: 600px;
+}
+
+.image-inspector-photo-comment {
+  margin: 0px;
+}
+
 .right-button,
 .left-button {
   transition: color 0s linear,
