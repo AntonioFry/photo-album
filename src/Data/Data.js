@@ -34,4 +34,24 @@ export const imageData = [
       },
     ]
   },
+  {
+    albumName: 'Wildlife Photos',
+    photos: [
+      {
+        imageSrc: require('./Images/deer-shedding-velvet.JPG'),
+        photoComment: "Took this shot at the Rocky Mountain Arsenal. Though there were many deer, this was the only one I saw who was shedding the velvet from their antlers",
+        photoDescription: "Deer grazing across a field with sheddet velvet hanging from their antlers"
+      },
+      {
+        imageSrc: require('./Images/deer-drinking.JPG'),
+        photoComment: "I usually prefer getting up close when it comes to wildife photography, but with so much life sprawling in one place I decided to back up and zoom out",
+        photoDescription: "A distant deer drinking from a lake"
+      },
+      {
+        imageSrc: require('./Images/emu.JPG'),
+        photoComment: "Probably one of my closest shots to an animal that you don't get to see commonly. Because of that I took the opportunity take a profile shot. This is one of my favorites.",
+        photoDescription: "A close up shot of an emus head"
+      }
+    ]
+  }
 ]
