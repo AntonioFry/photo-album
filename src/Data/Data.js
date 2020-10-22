@@ -53,5 +53,20 @@ export const imageData = [
         photoDescription: "A close up shot of an emus head"
       }
     ]
+  },
+  {
+    albumName: 'Bird Photos',
+    photos: [
+      {
+        imageSrc: require('./Images/grey-jay.JPG'),
+        photoComment: "Took this shot up at Echo Lake when the bird landed meer feet away from me. It wasn't until I searched up th bird I realized it was a grey jay.",
+        photoDescription: "Grey Jay perched and looking out"
+      },
+      {
+        imageSrc: require('./Images/blue-scrub-jay.JPG'),
+        photoComment: "Though they are common in Southern Colorado, they really stand out to me because of their color",
+        photoDescription: "Blue scrub jay perched and looking out"
+      }
+    ]
   }
 ]
