@@ -19,6 +19,14 @@ exports[`PhotoCard Should match snapshot 1`] = `
     >
       It's something
     </p>
+    <div
+      className="photo-card-btn-container"
+    >
+      <button
+        className="album-name-btn"
+        onClick={[Function]}
+      />
+    </div>
   </div>
 </article>
 `;
