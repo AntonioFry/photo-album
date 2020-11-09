@@ -22,66 +22,16 @@ exports[`Gallery Should match snapshot 1`] = `
       >
         This is one the first image I took of any sort of insect. After being able to see how much detail that was visible in the image versus the naked eye, I decided to try taking more of the small critters that roam the earth.
       </p>
-    </div>
-  </article>
-  <article
-    className="photo-card"
-    style={
-      Object {
-        "backgroundImage": "url(moon.JPG)",
-        "backgroundSize": "cover",
-      }
-    }
-  >
-    <div
-      className="photo-comment-container"
-    >
-      <p
-        className="photo-comment"
-        data-testid="photo-comment-2"
+      <div
+        className="photo-card-btn-container"
       >
-        I have always thougth it's always been cool to see the Moon during the day, and so I took a picture. It maybe common photo to find on the web, but it's still cool to see the craters so clearly when it's from a photo you took.
-      </p>
-    </div>
-  </article>
-  <article
-    className="photo-card"
-    style={
-      Object {
-        "backgroundImage": "url(honeybee.JPG)",
-        "backgroundSize": "cover",
-      }
-    }
-  >
-    <div
-      className="photo-comment-container"
-    >
-      <p
-        className="photo-comment"
-        data-testid="photo-comment-3"
-      >
-        Though this photo isn't my favorite, it was still a lucky shot to catch a bee polinating
-      </p>
-    </div>
-  </article>
-  <article
-    className="photo-card"
-    style={
-      Object {
-        "backgroundImage": "url(wasp.JPG)",
-        "backgroundSize": "cover",
-      }
-    }
-  >
-    <div
-      className="photo-comment-container"
-    >
-      <p
-        className="photo-comment"
-        data-testid="photo-comment-4"
-      >
-        Took this photo from across the room using a longer lens. I was amazed to also see how much detail was able to be captured. I was also able to free the bugger from my house.
-      </p>
+        <button
+          className="album-name-btn"
+          onClick={[Function]}
+        >
+          Insect Photos
+        </button>
+      </div>
     </div>
   </article>
   <article
@@ -98,10 +48,80 @@ exports[`Gallery Should match snapshot 1`] = `
     >
       <p
         className="photo-comment"
-        data-testid="photo-comment-5"
+        data-testid="photo-comment-2"
       >
         This is nice shot of a downhill street in my neighborhood that faces the mountains. However I would say it looks a lot nicer when actually there.
       </p>
+      <div
+        className="photo-card-btn-container"
+      >
+        <button
+          className="album-name-btn"
+          onClick={[Function]}
+        >
+          Environment Photos
+        </button>
+      </div>
+    </div>
+  </article>
+  <article
+    className="photo-card"
+    style={
+      Object {
+        "backgroundImage": "url(deer-shedding-velvet.JPG)",
+        "backgroundSize": "cover",
+      }
+    }
+  >
+    <div
+      className="photo-comment-container"
+    >
+      <p
+        className="photo-comment"
+        data-testid="photo-comment-3"
+      >
+        Took this shot at the Rocky Mountain Arsenal. Though there were many deer, this was the only one I saw who was shedding the velvet from their antlers
+      </p>
+      <div
+        className="photo-card-btn-container"
+      >
+        <button
+          className="album-name-btn"
+          onClick={[Function]}
+        >
+          Wildlife Photos
+        </button>
+      </div>
+    </div>
+  </article>
+  <article
+    className="photo-card"
+    style={
+      Object {
+        "backgroundImage": "url(grey-jay.JPG)",
+        "backgroundSize": "cover",
+      }
+    }
+  >
+    <div
+      className="photo-comment-container"
+    >
+      <p
+        className="photo-comment"
+        data-testid="photo-comment-4"
+      >
+        Took this shot up at Echo Lake when the bird landed meer feet away from me. It wasn't until I searched up th bird I realized it was a grey jay.
+      </p>
+      <div
+        className="photo-card-btn-container"
+      >
+        <button
+          className="album-name-btn"
+          onClick={[Function]}
+        >
+          Bird Photos
+        </button>
+      </div>
     </div>
   </article>
 </section>
