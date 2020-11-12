@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageInspector Should match Snapshot 1`] = `
+<section
+  className="faded-background"
+>
+  <button
+    className="close-button"
+    onClick={[Function]}
+  >
+    X
+  </button>
+  <button
+    className="left-button"
+    disabled={true}
+    onClick={[Function]}
+  >
+    &lt;
+  </button>
+  <div
+    className="image-container"
+  >
+    <img
+      alt="Grey Jay perched and looking out"
+      className="inspected-image"
+      src={
+        Object {
+          "imageSrc": "grey-jay.JPG",
+          "photoComment": "Took this shot up at Echo Lake when the bird landed meer feet away from me. It wasn't until I searched up th bird I realized it was a grey jay.",
+          "photoDescription": "Grey Jay perched and looking out",
+        }
+      }
+    />
+    <article
+      className="image-inspector-comment-container"
+    >
+      <p
+        className="image-inspector-photo-comment"
+        data-testid="photo-comment"
+      >
+        Took this shot up at Echo Lake when the bird landed meer feet away from me. It wasn't until I searched up th bird I realized it was a grey jay.
+      </p>
+    </article>
+  </div>
+  <button
+    className="right-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    &gt;
+  </button>
+</section>
+`;

@@ -32,6 +32,15 @@ describe('ImageInspector', () => {
       closeInspector={() => jest.fn()}
     />)
     expect(getByTestId('photo-comment')).toHaveTextContent(mockData.photos[0].photoComment)
+  });
+
+  it('Should match Snapshot', () => {
+    const tree = renderer.create(<ImageInspector
+      imageCollection={mockData.photos}
+      startingPhoto={mockData.photos[0]}
+      closeInspector={() => jest.fn()}
+    />).toJSON();
+    expect(tree).toMatchSnapshot();
   })
 
 })
