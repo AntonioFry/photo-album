@@ -37,7 +37,7 @@ class ImageInspector extends Component {
         <div className="image-container">
           <img className='inspected-image' src={currentImage} alt={imageCollection[currentImageIndex].photoDescription}/>
           <article className="image-inspector-comment-container">
-            <p className="image-inspector-photo-comment">{imageCollection[currentImageIndex].photoComment}</p>
+            <p data-testid="photo-comment" className="image-inspector-photo-comment">{imageCollection[currentImageIndex].photoComment}</p>
           </article>
         </div>
         <button

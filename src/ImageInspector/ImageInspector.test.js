@@ -31,6 +31,7 @@ describe('ImageInspector', () => {
       startingPhoto={mockData.photos[0]}
       closeInspector={() => jest.fn()}
     />)
+    expect(getByTestId('photo-comment')).toHaveTextContent(mockData.photos[0].photoComment)
   })
 
 })
