@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import ImageInspector from './ImageInspector';
 import renderer from 'react-test-renderer';
@@ -41,6 +41,20 @@ describe('ImageInspector', () => {
       closeInspector={() => jest.fn()}
     />).toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it('Should call closeInspector when close button is clicked', () => {
+    const handleClick = jest.fn()
+    const { getByTestId } = render(<ImageInspector
+      imageCollection={mockData.photos}
+      startingPhoto={mockData.photos[0]}
+      closeInspector={() => handleClick()}
+    />)
+
+    const closeButton = getByTestId('close-btn');
+    
+    fireEvent.click(closeButton);
+    expect(handleClick).toHaveBeenCalledTimes(1)
   })
 
 })
