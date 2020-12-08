@@ -6,6 +6,7 @@ exports[`ImageInspector Should match Snapshot 1`] = `
 >
   <button
     className="close-button"
+    data-testid="close-btn"
     onClick={[Function]}
   >
     X
