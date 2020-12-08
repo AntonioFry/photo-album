@@ -13,6 +13,7 @@ exports[`ImageInspector Should match Snapshot 1`] = `
   </button>
   <button
     className="left-button"
+    data-testid="left-btn"
     disabled={true}
     onClick={[Function]}
   >
@@ -24,6 +25,7 @@ exports[`ImageInspector Should match Snapshot 1`] = `
     <img
       alt="Grey Jay perched and looking out"
       className="inspected-image"
+      data-testid="inspected-img"
       src={
         Object {
           "imageSrc": "grey-jay.JPG",
@@ -45,6 +47,7 @@ exports[`ImageInspector Should match Snapshot 1`] = `
   </div>
   <button
     className="right-button"
+    data-testid="right-btn"
     disabled={false}
     onClick={[Function]}
   >
