@@ -28,7 +28,8 @@ class ImageInspector extends Component {
     return (
       <section className="faded-background">
         <button data-testid="close-btn" className="close-button" onClick={() => this.props.closeInspector()}>X</button>
-        <button 
+        <button
+          data-testid="left-btn"
           className='left-button' 
           onClick={() => this.changePhoto('left')} 
           disabled={imageCollection[currentImageIndex - 1] === undefined}>
@@ -41,6 +42,7 @@ class ImageInspector extends Component {
           </article>
         </div>
         <button
+          data-testid="right-btn"
           className='right-button'
           onClick={() => this.changePhoto('right')}
           disabled={imageCollection[currentImageIndex + 1] === undefined}>
