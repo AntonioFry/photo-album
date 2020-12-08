@@ -27,7 +27,7 @@ class ImageInspector extends Component {
 
     return (
       <section className="faded-background">
-        <button className="close-button" onClick={() => this.props.closeInspector()}>X</button>
+        <button data-testid="close-btn" className="close-button" onClick={() => this.props.closeInspector()}>X</button>
         <button 
           className='left-button' 
           onClick={() => this.changePhoto('left')} 
