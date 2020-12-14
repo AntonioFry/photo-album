@@ -75,4 +75,26 @@ describe('ImageInspector', () => {
     expect(inspectedImg).toHaveAttribute('alt', 'Grey Jay perched and looking out');
   });
 
+  it('Should disable navigational button when there is no photo ether prior or to follow in the array', () => {
+    const handleClick = jest.fn()
+    const { getByTestId } = render(<ImageInspector
+      imageCollection={mockData.photos}
+      startingPhoto={mockData.photos[0]}
+      closeInspector={() => handleClick()}
+    />);
+
+    const rightBtn = getByTestId('right-btn');
+    const leftBtn = getByTestId('left-btn');
+    const inspectedImg = getByTestId('inspected-img');
+
+    fireEvent.click(leftBtn);
+    
+    expect(inspectedImg).toHaveAttribute('alt', 'Grey Jay perched and looking out');
+
+    fireEvent.click(rightBtn);
+    fireEvent.click(rightBtn);
+
+    expect(inspectedImg).toHaveAttribute('alt', 'Blue scrub jay perched and looking out');
+  });
+
 })
