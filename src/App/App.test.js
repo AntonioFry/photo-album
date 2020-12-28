@@ -43,5 +43,4 @@ describe('App', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('Should change the currentPhotoAlbum when setCurrentPhotoAlbum is called')
 })
