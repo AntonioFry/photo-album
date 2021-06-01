@@ -1,0 +1,11 @@
+.preview-image-section {
+  background-color: rgba(105, 102, 102, 0.548);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+}
+
+.preview-image {
+  width: 600px;
+}

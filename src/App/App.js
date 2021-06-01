@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ImageInspector from '../ImageInspector/ImageInspector';
+import PreviewImages from '../PreviewImages/PreviewImages';
 import Gallery from '../Gallery/Gallery';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
         <header>
           <h1 data-testid="title" className="title-heading">My Photo Album</h1>
         </header>
+        <PreviewImages />
         <Gallery setCurrentPhotoAlbum={this.setCurrentPhotoAlbum} />
         { this.state.inspectorClosed === true ? null : <ImageInspector
          imageCollection={this.state.currentPhotoAlbum}
