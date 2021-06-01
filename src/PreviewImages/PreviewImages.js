@@ -6,14 +6,14 @@ class PreviewImages extends Component {
     super();
     this.state = {
       previewAlbum: [],
-      currentPreviewPhoto: ''
+      currentPreviewPhoto: {}
     }
   }
 
   render() {
     return (
       <section className="preview-image-section">
-        <img src={require('../Data/Images/ants-and-plants.JPG')} />
+        <img className="preview-image" src={require('../Data/Images/ants-and-plants.JPG')} />
       </section>
     )
   }
