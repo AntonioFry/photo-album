@@ -18,3 +18,5 @@ class PreviewImages extends Component {
     )
   }
 }
+
+export default PreviewImages
